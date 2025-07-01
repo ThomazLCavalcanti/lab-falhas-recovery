@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>6.0</version>
+    <date>2025-07-01T12:00:00Z</date>
+    <templates>
+        <template>
+            <template>Template Apache2 Service</template>
+            <name>Template Apache2 Service</name>
+            <description>Template para monitorar o status do serviço apache2 em hosts Linux via Zabbix Agent.</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <name>Status do Apache2</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>proc.num[apache2]</key>
+                    <delay>30s</delay>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <units/>
+                    <description>Verifica se o processo apache2 está ativo</description>
+                    <applications>
+                        <application>
+                            <name>Serviços</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+            <applications>
+                <application>
+                    <name>Serviços</name>
+                </application>
+            </applications>
+            <discovery_rules/>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>
