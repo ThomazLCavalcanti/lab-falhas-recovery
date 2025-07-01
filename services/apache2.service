@@ -1,0 +1,13 @@
+[Unit]
+Description=Apache2 Web Server (Simulado)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/apache2ctl -DFOREGROUND
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill -TERM $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
