@@ -1,0 +1,29 @@
+# Ignorar arquivos de sistema
+*.swp
+*.bak
+*.tmp
+*.log
+
+# Ignorar arquivos de backup de editores
+*~
+*.orig
+
+# Ignorar arquivos gerados por imagens
+*.png
+*.jpg
+*.jpeg
+
+# Ignorar arquivos sensíveis ou locais
+.env
+*.pem
+
+# Ignorar diretórios do sistema
+__pycache__/
+.cache/
+.idea/
+.vscode/
+
+# Ignorar logs gerados pelos scripts
+*.out
+*.err
+*.gz
