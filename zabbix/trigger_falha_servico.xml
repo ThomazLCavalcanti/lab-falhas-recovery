@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>6.0</version>
+    <date>2025-07-01T12:30:00Z</date>
+    <triggers>
+        <trigger>
+            <expression>{Template Apache2 Service:proc.num[apache2].last()}=0</expression>
+            <name>FALHA - Serviço Apache2 está parado</name>
+            <priority>4</priority>
+            <description>O serviço Apache2 não está em execução no host monitorado.</description>
+            <status>0</status>
+            <dependencies/>
+            <tags>
+                <tag>
+                    <tag>serviço</tag>
+                    <value>apache2</value>
+                </tag>
+            </tags>
+        </trigger>
+    </triggers>
+</zabbix_export>
